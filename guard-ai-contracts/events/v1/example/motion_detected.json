@@ -1,0 +1,13 @@
+{
+  "event_id": "8c2b5b9b-4aa7-4c7a-9c74-2cde6c7b9a11",
+  "site_id": "d2b0b7f6-5c2a-4c2d-9a1e-2f5b3c4d5e6f",
+  "hub_id": "hub-001",
+  "source": "camera",
+  "type": "motion_detected",
+  "severity": "info",
+  "timestamp": "2025-12-13T12:00:00Z",
+  "payload": { "camera_id": "entrance", "zone": "front_door" },
+  "media_ref": null,
+  "tags": ["rtsp", "nvr"],
+  "schema_version": "v1"
+}

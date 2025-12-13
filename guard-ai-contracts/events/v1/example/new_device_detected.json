@@ -1,0 +1,13 @@
+{
+  "event_id": "b0d59a63-7a9f-40d8-8c0b-4e2e6d1a6b31",
+  "site_id": "d2b0b7f6-5c2a-4c2d-9a1e-2f5b3c4d5e6f",
+  "hub_id": "hub-001",
+  "source": "network",
+  "type": "new_device_detected",
+  "severity": "warning",
+  "timestamp": "2025-12-13T12:05:00Z",
+  "payload": { "mac": "AA:BB:CC:DD:EE:FF", "ip": "192.168.1.42", "vendor": "Unknown" },
+  "media_ref": null,
+  "tags": ["wifi"],
+  "schema_version": "v1"
+}

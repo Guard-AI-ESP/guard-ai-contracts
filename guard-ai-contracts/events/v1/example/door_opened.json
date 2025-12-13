@@ -1,0 +1,13 @@
+{
+  "event_id": "1c1d4f91-1b86-4e74-8a7a-1c5a2b3d4e5f",
+  "site_id": "d2b0b7f6-5c2a-4c2d-9a1e-2f5b3c4d5e6f",
+  "hub_id": "hub-001",
+  "source": "sensor",
+  "type": "door_opened",
+  "severity": "critical",
+  "timestamp": "2025-12-13T12:10:00Z",
+  "payload": { "sensor_id": "door-entrance", "state": "open" },
+  "media_ref": null,
+  "tags": ["zigbee"],
+  "schema_version": "v1"
+}
