@@ -19,6 +19,23 @@
     "media_ref": { "type": ["string", "null"] },
     "tags": { "type": "array", "items": { "type": "string" } },
 
-    "schema_version": { "type": "string", "const": "v1" }
+    "schema_version": { "type": "string", "const": "v1" },
+
+    "camera_id": { "type": ["string", "null"] },
+    "face_id": { "type": ["string", "null"] },
+    "person_name": { "type": ["string", "null"] },
+    "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "is_known": { "type": ["boolean", "null"] },
+    "bounding_box": {
+      "type": ["object", "null"],
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 },
+        "w": { "type": "number", "minimum": 0, "maximum": 1 },
+        "h": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["x", "y", "w", "h"],
+      "additionalProperties": false
+    }
   }
 }
