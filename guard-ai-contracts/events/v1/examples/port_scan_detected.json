@@ -1,0 +1,22 @@
+{
+  "event_id": "3e9b3c4d-0000-4000-8000-000000000103",
+  "site_id": "00000000-0000-0000-0000-000000000042",
+  "hub_id": "pi-hub-01",
+  "source": "network",
+  "type": "port_scan_detected",
+  "severity": "critical",
+  "timestamp": "2026-04-22T14:35:07Z",
+  "mac_address": "aa:bb:cc:99:88:77",
+  "ip_address": "192.168.50.99",
+  "hostname": "laptop-attacker",
+  "scan_type": "port_scan",
+  "direction": "outbound",
+  "signature": "ET SCAN Nmap TCP SYN",
+  "payload": {
+    "target_ip": "192.168.50.1",
+    "ports_scanned": [22, 80, 443, 3389, 8080],
+    "duration_ms": 1230
+  },
+  "tags": ["ids", "nmap"],
+  "schema_version": "v1"
+}

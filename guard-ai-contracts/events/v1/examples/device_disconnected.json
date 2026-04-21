@@ -1,0 +1,17 @@
+{
+  "event_id": "3e9b3c4d-0000-4000-8000-000000000102",
+  "site_id": "00000000-0000-0000-0000-000000000042",
+  "hub_id": "pi-hub-01",
+  "source": "network",
+  "type": "device_disconnected",
+  "severity": "info",
+  "timestamp": "2026-04-22T15:02:47Z",
+  "mac_address": "aa:bb:cc:11:22:33",
+  "ip_address": "192.168.50.42",
+  "hostname": "iphone-jury",
+  "payload": {
+    "reason": "deauth",
+    "connected_for_seconds": 1955
+  },
+  "schema_version": "v1"
+}

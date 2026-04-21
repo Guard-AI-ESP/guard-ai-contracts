@@ -1,0 +1,37 @@
+name: Schema validation
+
+on:
+  pull_request:
+  push:
+    branches: [main, staging]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install ajv-cli
+        run: npm install --no-save ajv-cli@^5 ajv-formats@^3
+
+      - name: Validate event examples
+        run: |
+          npx ajv validate \
+            --spec=draft2020 \
+            -c ajv-formats \
+            -s guard-ai-contracts/events/v1/event.schema.json \
+            -d 'guard-ai-contracts/events/v1/examples/*.json' \
+            --all-errors
+
+      - name: Validate command examples
+        run: |
+          npx ajv validate \
+            --spec=draft2020 \
+            -c ajv-formats \
+            -s guard-ai-contracts/commands/v1/command.schema.json \
+            -d 'guard-ai-contracts/commands/v1/examples/*.json' \
+            --all-errors
