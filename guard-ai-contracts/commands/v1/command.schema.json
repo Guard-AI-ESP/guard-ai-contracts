@@ -1,0 +1,35 @@
+{
+  "$id": "https://guardai.local/schemas/commands/v1/command.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GuardAI Hub Command v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["command_id", "hub_id", "type", "created_at", "status", "schema_version"],
+  "properties": {
+    "command_id": { "type": "string", "format": "uuid" },
+    "hub_id": { "type": "string" },
+
+    "type": {
+      "type": "string",
+      "enum": ["scan_network", "block_device", "kick_device", "unblock_device"]
+    },
+    "payload": { "type": "object", "additionalProperties": true },
+
+    "created_at": { "type": "string", "format": "date-time" },
+    "dispatched_at": { "type": ["string", "null"], "format": "date-time" },
+    "completed_at": { "type": ["string", "null"], "format": "date-time" },
+    "expires_at": { "type": ["string", "null"], "format": "date-time" },
+
+    "status": {
+      "type": "string",
+      "enum": ["pending", "dispatched", "running", "succeeded", "failed"]
+    },
+    "result": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "error": { "type": ["string", "null"] },
+
+    "schema_version": { "type": "string", "const": "v1" }
+  }
+}

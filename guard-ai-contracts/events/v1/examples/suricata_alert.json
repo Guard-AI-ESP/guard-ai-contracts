@@ -1,0 +1,24 @@
+{
+  "event_id": "3e9b3c4d-0000-4000-8000-000000000104",
+  "site_id": "00000000-0000-0000-0000-000000000042",
+  "hub_id": "pi-hub-01",
+  "source": "network",
+  "type": "suricata_alert",
+  "severity": "warning",
+  "timestamp": "2026-04-22T14:36:42Z",
+  "mac_address": "aa:bb:cc:99:88:77",
+  "ip_address": "192.168.50.99",
+  "direction": "outbound",
+  "signature": "ET MALWARE Suspicious DNS Query",
+  "payload": {
+    "sid": 2034567,
+    "rev": 3,
+    "category": "Misc activity",
+    "src_port": 53412,
+    "dst_ip": "185.220.101.42",
+    "dst_port": 53,
+    "protocol": "UDP"
+  },
+  "tags": ["suricata", "dns"],
+  "schema_version": "v1"
+}

@@ -1,0 +1,21 @@
+{
+  "command_id": "7a6b5c4d-0000-4000-8000-000000000202",
+  "hub_id": "pi-hub-01",
+  "type": "block_device",
+  "payload": {
+    "mac_address": "aa:bb:cc:99:88:77",
+    "reason": "port_scan_detected",
+    "ttl_seconds": 3600
+  },
+  "created_at": "2026-04-22T14:35:30Z",
+  "dispatched_at": "2026-04-22T14:35:31Z",
+  "completed_at": "2026-04-22T14:35:32Z",
+  "expires_at": "2026-04-22T15:35:30Z",
+  "status": "succeeded",
+  "result": {
+    "rule_handle": "iptables-rule-247",
+    "interface": "wlan0"
+  },
+  "error": null,
+  "schema_version": "v1"
+}

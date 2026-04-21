@@ -1,0 +1,20 @@
+{
+  "event_id": "3e9b3c4d-0000-4000-8000-000000000105",
+  "site_id": "00000000-0000-0000-0000-000000000042",
+  "hub_id": "pi-hub-01",
+  "source": "network",
+  "type": "firewall_drop_burst",
+  "severity": "warning",
+  "timestamp": "2026-04-22T14:40:00Z",
+  "mac_address": "aa:bb:cc:99:88:77",
+  "ip_address": "192.168.50.99",
+  "direction": "inbound",
+  "drop_count": 247,
+  "payload": {
+    "window_seconds": 60,
+    "chain": "FORWARD",
+    "sample_ports": [22, 23, 3389]
+  },
+  "tags": ["iptables"],
+  "schema_version": "v1"
+}
